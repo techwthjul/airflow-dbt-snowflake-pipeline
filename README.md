@@ -54,3 +54,17 @@ Before running this project, ensure the following:
 
 ## 📂 Project Structure
 
+airflow-dbt-snowflake-pipeline/
+├── dags/
+│ └── dbt_dag.py
+├── dbt/
+│ └── data_pipeline/
+│ ├── models/
+│ ├── snapshots/
+│ ├── tests/
+├── include/
+├── Dockerfile
+├── requirements.txt
+├── .env
+└── architecture.png
+
