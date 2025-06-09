@@ -32,9 +32,4 @@ This project demonstrates a modular ELT pipeline using Apache Airflow, dbt, and 
 - Snowflake
 - Astro CLI (local environment)
 
-## 🧪 To Run
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/modular-elt-airflow-dbt-snowflake.git
-   cd modular-elt-airflow-dbt-snowflake
