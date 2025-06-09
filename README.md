@@ -1,70 +1,54 @@
-# Airflow + DBT + Snowflake Modular ELT Pipeline 🚀
+# 🌐 Airflow + DBT + Snowflake ELT Pipeline
 
-This project implements a **modular ELT (Extract, Load, Transform) pipeline** using **Apache Airflow**, **dbt**, and **Snowflake**, automating data workflows from raw ingestion to transformation and validation.
-
----
-
-## ✅ Problem We’re Solving
-
-Data teams often face fragmented workflows between orchestration (Airflow) and transformation (dbt), leading to manual effort, poor lineage visibility, and debugging difficulty. This project demonstrates a **unified CI/CD pipeline** with:
-
-- Automated staging and transformation of multiple tables.
-- Role-based access and schema control on Snowflake.
-- Integrated testing and lineage tracking via Airflow.
+This project demonstrates a complete modular ELT (Extract, Load, Transform) data pipeline using Apache Airflow, dbt, and Snowflake. The pipeline automates raw data staging, transformation, and testing using dbt models orchestrated by Airflow DAGs.
 
 ---
 
-## 📌 Architecture Overview
+## 🧩 What Problem Are We Solving?
 
-![Architecture Diagram](https://github.com/techwthjul/airflow-dbt-snowflake-pipeline/blob/main/architecture.png)
-
-> *Components used: Apache Airflow (DAGs), DBT (modular SQL models), Cosmos (Airflow-dbt integration), Snowflake (Cloud DWH).*
-
----
-
-## 🛠️ Prerequisites
-
-Before running this project, ensure the following:
-
-- Docker & Docker Compose installed
-- Snowflake account with:
-  - A database (`dbt_db`)
-  - A warehouse (`dbt_wh`)
-  - A schema (`dbt_schema`)
-  - A role (`dbt-role`) with access
-- `astro dev` CLI installed (via Astronomer CLI)
-- DBT CLI installed (for local testing)
+Modern data teams face challenges in orchestrating scalable and testable data pipelines that ensure data quality and modular transformations. This project solves that by combining:
+- **Airflow** for scheduling and DAG orchestration
+- **DBT** for modular SQL-based transformations and testing
+- **Snowflake** as the cloud data warehouse
 
 ---
 
-## ⚙️ How It Works
+## 📺 Live Demo (YouTube)
 
-- Airflow DAGs orchestrate the execution of dbt models using [Cosmos](https://astronomer.github.io/astronomer-cosmos/).
-- dbt performs transformations on Snowflake data: staging (`stg_tpch_orders`), integration, and fact models.
-- dbt tests are triggered and results shown in Airflow UI (XCom and Logs).
-- Access control and schema validation are managed in Snowflake connection setup.
+📹 [Watch the demo](https://www.youtube.com/watch?v=your-demo-link)  
+*(Replace with your actual YouTube video link)*
 
 ---
 
-## 🎬 Live Demo
+## 🧱 Tech Stack
 
-▶️ [Watch the Full Project Walkthrough on YouTube](https://www.youtube.com/watch?v=your-demo-video-id)
+- Apache Airflow (Astro CLI)
+- DBT (Data Build Tool)
+- Snowflake Cloud Data Platform
+- Cosmos (DBT-Airflow integration)
+- Python
+- Docker (via Astro CLI)
 
 ---
 
-## 📂 Project Structure
+## 🧭 Architecture Diagram
 
-airflow-dbt-snowflake-pipeline/
-├── dags/
-│ └── dbt_dag.py
-├── dbt/
-│ └── data_pipeline/
-│ ├── models/
-│ ├── snapshots/
-│ ├── tests/
-├── include/
-├── Dockerfile
-├── requirements.txt
-├── .env
-└── architecture.png
+![Architecture Diagram](https://github.com/techwthjul/airflow-dbt-snowflake-pipeline/blob/main/ChatGPT%20Image%20Jun%209%2C%202025%2C%2012_17_16%20PM.png?raw=true)
 
+---
+
+## ⚙️ Prerequisites
+
+- ✅ Snowflake account & credentials with correct roles
+- ✅ [Astro CLI](https://docs.astronomer.io/astro/cli/install-cli) installed
+- ✅ Docker Desktop running
+- ✅ Git installed
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/techwthjul/airflow-dbt-snowflake-pipeline.git
+   cd airflow-dbt-snowflake-pipeline
