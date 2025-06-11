@@ -36,6 +36,7 @@ Modern data teams face challenges in orchestrating scalable and testable data pi
 - Snowflake Cloud Data Platform
 - Cosmos (DBT-Airflow integration)
 - Python
+- SQL 
 - Docker (via Astro CLI)
 
 ---
