@@ -16,6 +16,15 @@ Modern data teams face challenges in orchestrating scalable and testable data pi
 ## 📺 Live Demo (YouTube)
 
 📹 [Watch the demo](https://www.youtube.com/watch?v=0OOGlrK5_HM)  
+<table>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=0OOGlrK5_HM" target="_blank">
+        <img src="https://img.youtube.com/vi/0OOGlrK5_HM/0.jpg" width="100%">
+        <br><strong>ELT Pipeline using Airflow, DBT, Snowflake and Cosmos</strong>
+      </a>
+    </td>
+</table>
 
 
 ---
